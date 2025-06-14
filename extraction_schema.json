@@ -1,0 +1,51 @@
+{
+    "0 Informacoes do Documento": {
+        "particao": 1,
+        "titulo_padrao": "SICOOB\\s*Súmula de Crédito",
+        "json_chave": "inf_documento", 
+        "campos_esperados": ["cooperativa", "pa", "data_documento", "hora_documento", "data_ref_doc"]
+    },
+    "1 Dados do Associado": {
+        "particao": 1,
+        "titulo_padrao": "Dados do Associado",
+        "json_chave": "dados_associado",
+        "campos_esperados": ["nome_associado", "cpf_cnpj_associado", "c_c_associado" , "endereco_associado", "risco_associado", "pd_associado", "tipo_pessoa_associado", "idade_constituicao_associado", "limite_disponivel_associado", "vigencia_limite_associado", "situacao_limite_associado", "associado_desde_data"]
+    },
+    "2 Linha de Credito": {
+        "particao": 1,
+        "titulo_padrao": "Linha de crédito",
+        "json_chave": "linha_credito",
+        "campos_esperados": ["linha_credito_nome", "origem_principal", "ind_calculo", "finalidade_principal", "produto_sisbr_legado_principal", "modalidade_sisbr", "produto_sisbr_detalhado", "origem_sisbr_detalhada", "finalidade_sisbr_detalhada"]
+    },
+    "3 Dados da Proposta": {
+        "particao": 2,
+        "titulo_padrao": "Dados da Proposta",
+        "json_chave": "dados_proposta",
+        "campos_esperados": ["nr_proposta", "tx_juros_proposta", "menor_parc_rs", "financia_seguro_proposta", "data_proposta", "tx_mora_proposta", "maior_parc_rs", "total_despesas_proposta", "data_operacao_proposta", "tx_juros_inad_proposta", "tipo_venc_proposta", "despesas_adic_proposta", "valor_proposta", "tx_multa_proposta", "dia_venc_proposta", "valor_adicional_proposta", "ind_pos_proposta", "tipo_seguro_proposta", "perc_perda_esperada_proposta", "valor_total_financiado_proposta", "perc_ind_pos_proposta", "contr_seguro_proposta", "valor_perda_proposta", "vencimento_proposta", "ind_atraso_proposta", "valor_seguro_proposta", "ativo_problematico_proposta", "cet_mensal_proposta", "perc_ind_atraso_proposta", "iof_adc_proposta", "carteira_proposta", "cet_anual_proposta", "prazo_proposta", "financia_iof_proposta", "estagio_proposta", "pre_autorizado_proposta", "qtd_parcelas_proposta", "tarifa_proposta", "pd_operacao_proposta", "periodicidade_proposta", "primeiro_venc_proposta", "financia_tac_proposta"]
+    },
+    "4 Reciprocidade Negócios Cooperativa": {
+        "particao": 3,
+        "titulo_padrao": "Reciprocidade\\s*–\\s*Portfólio\\s*de\\s*Negócios\\s*\\(\\s*Cooperativa\\s*\\)",
+        "json_chave": "reciprocidade_coop",
+        "campos_esperados": ["coop_cap_subscrito", "coop_cap_integralizado", "coop_cap_bloqueado", "coop_cap_a_integralizar", "coop_cc_desde", "coop_cc_saldo", "coop_cc_dep_bloqueado", "coop_cc_saldo_bloq_jud", "coop_cc_limite", "coop_cc_saldo_medio_mes_ano_1", "coop_cc_saldo_medio_mes_ano_2", "coop_cc_saldo_medio_mes_ano_3", "coop_cc_trimestre", "coop_cobr_simples", "coop_cobr_caucionada", "coop_cobr_vinculada", "coop_aplic_disp_poupanca", "coop_aplic_disp_dap", "coop_aplic_disp_rdc", "coop_aplic_disp_lca", "coop_aplic_disp_lci", "coop_aplic_bloq_poupanca", "coop_aplic_bloq_dap", "coop_aplic_bloq_rdc", "coop_aplic_bloq_lca", "coop_aplic_bloq_lci"]
+    },
+    "5 Reciprocidade Negócios Bancoob": {
+        "particao": 4,
+        "titulo_padrao": "Reciprocidade\\s*–\\s*Portfólio\\s*de\\s*Negócios\\s*\\(\\s*Bancoob\\s*\\)",
+        "json_chave": "reciprocidade_bancoob",
+        "campos_esperados": ["bco_cap_subscrito", "bco_cap_integralizado", "bco_cap_bloqueado", "bco_cap_a_integralizar", "bco_cc_desde", "bco_cc_saldo", "bco_cc_dep_bloqueado", "bco_cc_saldo_bloq_jud", "bco_cc_limite", "bco_cc_saldo_medio_mes_ano_1", "bco_cc_saldo_medio_mes_ano_2", "bco_cc_saldo_medio_mes_ano_3", "bco_cc_trimestre", "bco_cobr_simples", "bco_cobr_caucionada", "bco_cobr_vinculada", "bco_aplic_disp_poupanca", "bco_aplic_disp_dap", "bco_aplic_disp_rdc", "bco_aplic_disp_lca", "bco_aplic_disp_lci", "bco_aplic_bloq_poupanca", "bco_aplic_bloq_dap", "bco_aplic_bloq_rdc", "bco_aplic_bloq_lca", "bco_aplic_bloq_lci"]
+    },
+    "6 Responsabilidade Conta Corrente": {
+        "particao": 5,
+        "titulo_padrao": "Responsabilidade\\s*–\\s*Conta\\s*Corrente",
+        "json_chave": "responsabilidade_cc",
+        "campos_esperados": ["utilizacao_limite_cc", "qtd_dias_cc", "adiantamento_cc", "risco_sacado_cc"]
+    },
+    "7 Responsabilidade Direta Op Credito Associado Cooperativa": {
+        "particao": 5,
+        "titulo_padrao": "Responsabilidade\\s*Direta\\s*-\\s*Operações\\s*de\\s*Crédito\\s*do\\s*Associado\\s*COOPERATIVA",
+        "json_chave": "resp_direta_assoc_coop",
+        "nome_lista_json": "operacoes_coop",
+        "sub_campos_lista": ["produto_op_coop", "vencidos_op_coop", "curto_prazo_op_coop", "medio_prazo_op_coop", "longo_prazo_op_coop", "saldo_devedor_op_coop"]
+    }
+}

@@ -1,0 +1,38 @@
+# Arquivos de ambiente
+.env
+
+# Logs
+*.log
+processamento_pdf.log
+
+# Cache do Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Arquivos gerados pelo PyInstaller (se aplicável)
+dist/
+build/
+*.spec
+
+# Arquivos de IDE
+.vscode/
+.idea/
+
+# Arquivos temporários OS
+*~
+.DS_Store
+Thumbs.db
+"Extra\303\247\303\243o de pdf.rar"
+*.rar
+"Extra\303\247\303\243o/"
+
+# Saídas geradas pela aplicação que você pode não querer versionar
+# (descomente e ajuste se necessário)
+# *_PREENCHIDO.xlsx
+# *_dados_para_excel.json
+# *_ia_bruto_combinado.json
+# *_texto_completo_para_ia.txt
+# *_ia_achatado_debug.json
+# *_final_normalizado_debug.json
